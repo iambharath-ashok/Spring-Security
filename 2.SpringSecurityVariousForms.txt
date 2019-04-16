@@ -1,0 +1,117 @@
+#	Spring Security
+
+
+-	Spring Security is a framework that focuses on providing both authentication and authorization to Java EE-based enterprise software applications.
+
+## 	Maven Dependency
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>4.1.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>4.1.1.RELEASE</version>
+		</dependency>
+	</dependencies>
+	
+-	If we face any transitive dependency problem causing classpath issues at runtime,
+	-	we may consider adding spring security BOM file.
+	
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>4.3.1.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+		
+## Spring Security Examples
+
+
+### 1.	Spring Security – Login Form Example
+
+-	Only authorized user should be able to access edit employee screen.
+-	Unauthorized users should be presented with login screen.
+-	Successful credentials should forward to edit employee screen.
+-	Unsuccessful credentials should forward to access denied screen.
+-	There should be a link for logout of the application.
+
+
+###	2.	Spring Security – JDBC User Service Example
+
+-	Example of <jdbc-user-service/> used to fetch username and password from database to authenticate user into the system.
+
+
+###	3.	Spring Security – HTTP Basic Authentication Example
+
+-	Example of <http-basic/> used to enforce the user to authenticate any of webpage or any other resource in your application with basic http authentication.
+
+		
+		
+###	4.	Spring Security – Custom UserDetailsService Example
+
+-	Extending and using UserDetailsService interface which is used in order to lookup the username, password and granted authorities for any given user.
+
+
+###	5.	Spring Security – Method Level Security Example – @PreAuthorize and @Secured
+
+-	
+
+### 6.	Spring Security – View Layer Security using JSP Taglibs
+
+-	Adding security in view layer.
+-	It is mostly needed when we want to hide certain links or buttons based on user’s role 
+-	So that he will not be able to access that functionality.
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
